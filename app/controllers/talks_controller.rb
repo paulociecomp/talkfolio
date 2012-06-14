@@ -1,5 +1,6 @@
 class TalksController < ApplicationController
   def my_talks
+    @talks = Talk.all
   end
 
   def new

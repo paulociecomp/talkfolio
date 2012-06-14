@@ -8,4 +8,8 @@ describe Talk, "add to portfolio" do
     subject.add_to_portfolio
     subject.should be_persisted
   end
+
+  it "returns talk" do
+    subject.add_to_portfolio.should == subject
+  end
 end

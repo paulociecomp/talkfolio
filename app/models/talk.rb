@@ -3,5 +3,6 @@ class Talk < ActiveRecord::Base
 
   def add_to_portfolio
     save
+    self
   end
 end
