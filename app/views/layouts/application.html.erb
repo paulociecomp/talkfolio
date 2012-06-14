@@ -8,6 +8,14 @@
 </head>
 <body>
 
+<nav>
+  <ul>
+    <li><%= link_to t(:my_talks), my_talks_path %></li>
+  </ul>
+</nav>
+
+<div><%= flash[:notice] %></div>
+
 <%= yield %>
 
 </body>

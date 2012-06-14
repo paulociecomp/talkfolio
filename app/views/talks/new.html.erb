@@ -1,0 +1,9 @@
+<%= form_for :talk, :url => talks_path do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.submit t(:add_talk_to_my_portfolio) %>
+<% end %>

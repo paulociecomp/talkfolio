@@ -3,3 +3,6 @@
 
 en:
   hello: "Hello world"
+  my_talks: "My talks"
+  add_talk: "Add talk"
+  add_talk_to_my_portfolio: "Add talk to my portfolio"
