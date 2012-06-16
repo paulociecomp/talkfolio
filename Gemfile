@@ -14,3 +14,7 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
 end
+
+group :test, :development do
+  gem 'pry'
+end
