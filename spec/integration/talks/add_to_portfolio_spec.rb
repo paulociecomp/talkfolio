@@ -21,7 +21,7 @@ describe "Add talk to portfolio" do
       current_path.should == my_talks_path
     end
 
-    it "saves the talk" do
+    it "shows the new talk" do
       page.should have_content "Rails Tests"
     end
   end

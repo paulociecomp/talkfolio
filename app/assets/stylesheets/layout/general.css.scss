@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  margin-top: -16px;
+}
+
+ul, li {
+  list-style: none; 
+  padding: 0px;
+}
+
+div#topbar {
+  background: #333;
+  height: 52px;
+  padding: 0px 30px;
+
+  #logo {
+    display: inline-block;
+    padding-top: 4px;
+    h1 {
+      color: #aaa;
+      font: normal 24px "Helvetica nueve", Helvetica, Arial, sans-serif;
+    } 
+  }
+  
+  nav {
+    float: right;
+    padding-top: 8px;    
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 16px;
+  }
+
+  nav a, nav .separator {
+    color: white;
+    font: normal 13px Arial, sans-serif;
+    text-decoration: none;
+  }
+}
