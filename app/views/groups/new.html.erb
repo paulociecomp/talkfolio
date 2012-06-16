@@ -1,0 +1,9 @@
+<%= form_for :group, :url => groups_path do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.submit t(:found_group) %>
+<% end %>

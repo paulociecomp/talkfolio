@@ -2,7 +2,11 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
   my_talks: "My talks"
   add_talk: "Add talk"
   add_talk_to_my_portfolio: "Add talk to my portfolio"
+
+  my_groups: "My groups"
+  found_a_group: "Found a group"
+  found_group: "Found group"
+  you_founded_a_new_group: "You founded a new group!"

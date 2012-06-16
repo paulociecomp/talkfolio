@@ -1,10 +1,9 @@
 # create group/event
 
-User adds talk to his portfolio
-User founds a group
+OK - User adds talk to his portfolio
+OK - User founds a group
 User creates an event
-User creates an event for a group
-
+Group admin creates an event
 
 
 # talk submition
@@ -59,6 +58,3 @@ Group admin cancels membership
 User makes friends
 User accepts/rejects friendship
 User
-
-
-
