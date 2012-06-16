@@ -1,0 +1,4 @@
+<%= form_for :talk, :url => talk_submitions_path do |f| %>
+  <%= f.select :id, @talks.collect { |t| [t.title, t.id] } %>
+  <%= f.submit t(:submit_talk) %>
+<% end %>

@@ -8,7 +8,7 @@ Group admin creates an event
 
 # talk submition
 
-User submits a talk to a group's portfolio
+OK - User submits a talk to a group's portfolio
 User submits a talk to an event
 Group admin accepts or rejects a talk from a talk submitter
 Event organizer accepts or rejects a talk from a talk submitter
