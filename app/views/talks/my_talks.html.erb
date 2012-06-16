@@ -1,1 +1,7 @@
 <%= link_to t(:add_talk), new_talk_path %>
+
+<%= @talks.each do |talk| %>
+  <article>
+    <%= talk.title %>
+  </article>
+<% end %>

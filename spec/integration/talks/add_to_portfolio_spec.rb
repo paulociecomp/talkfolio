@@ -20,5 +20,9 @@ describe "Add talk to portfolio" do
     it "redirects to my talks" do
       current_path.should == my_talks_path
     end
+
+    it "saves the talk" do
+      page.should have_content "Rails Tests"
+    end
   end
 end
