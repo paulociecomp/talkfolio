@@ -10,7 +10,8 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = Group.found(params[:group])
+    @group = Group.new(params[:group])
+    @group.found
     flash[:notice] = t(:you_founded_a_new_group)
     redirect_to @group
   end

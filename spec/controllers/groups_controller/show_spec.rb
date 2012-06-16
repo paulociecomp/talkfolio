@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe GroupsController, "GET show" do
   before do
-    @group = Group.found(name: "Ta safo!", description: "Hi!")
+    @group = Group.new(name: "Ta safo!", description: "Hi!").found
     get :show, :id => @group.id
   end
 

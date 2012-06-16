@@ -1,7 +1,8 @@
 class Group < ActiveRecord::Base
   attr_accessible :name, :description
 
-  def self.found(params)
-    create(params)
+  def found
+    save
+    self
   end
 end
