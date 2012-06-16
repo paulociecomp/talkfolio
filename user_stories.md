@@ -63,7 +63,7 @@ User accepts/rejects friendship
 # Browsing
 
 User views talks
-User views groups
+OK - User views groups
 User views events
 
 OK - User lists talks in "My talks"

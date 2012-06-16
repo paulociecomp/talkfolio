@@ -28,4 +28,13 @@ section#content {
     color: #333;
     font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
   }
+
+  article h1 a {
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
