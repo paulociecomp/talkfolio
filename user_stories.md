@@ -69,7 +69,7 @@ User views events
 OK - User lists talks in "My talks"
 User lists talks that he owns
 
-User lists groups in "My groups"
+OK - User lists groups in "My groups"
 User lists groups that he owns
 User lists groups that he talks
 User lists groups that he is member

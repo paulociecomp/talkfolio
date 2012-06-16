@@ -1,5 +1,6 @@
 class GroupsController < ApplicationController
   def my_groups
+    @groups = Group.all
   end
 
   def new
