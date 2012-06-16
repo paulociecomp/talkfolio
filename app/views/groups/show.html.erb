@@ -11,3 +11,16 @@
 <p>
   <%= @group.description%>
 </p>
+
+<section>
+  <header>
+    <h1><%= t(:portfolio) %></h1>
+  </header>
+
+  <% @portfolio.each do |item| %>
+    <article>
+      <h1><%= item.title %></h1>
+      <p><%= item.description %></p>
+    </article>
+  <% end %>
+</section>

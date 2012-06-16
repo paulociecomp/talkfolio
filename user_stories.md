@@ -1,14 +1,14 @@
 # create group/event
 
-OK - User adds talk to his portfolio
-OK - User founds a group
+[OK]     User adds talk to his portfolio
+[OK]     User founds a group
 User creates an event
 Group admin creates an event
 
 
 # talk submition
 
-OK - User submits a talk to a group's portfolio
+[OK]     User submits a talk to a group's portfolio
 User submits a talk to an event
 Group admin accepts or rejects a talk from a talk submitter
 Event organizer accepts or rejects a talk from a talk submitter
@@ -63,13 +63,13 @@ User accepts/rejects friendship
 # Browsing
 
 User views talks
-OK - User views groups
+[OK]     User views groups
 User views events
 
-OK - User lists talks in "My talks"
+[OK]     User lists talks in "My talks"
 User lists talks that he owns
 
-OK - User lists groups in "My groups"
+[OK]     User lists groups in "My groups"
 User lists groups that he owns
 User lists groups that he talks
 User lists groups that he is member
@@ -77,3 +77,5 @@ User lists groups that he is member
 User lists events in "My events"
 User lists events that he owns
 User lists events that he talks
+
+[OK]     User views group's portfolio
