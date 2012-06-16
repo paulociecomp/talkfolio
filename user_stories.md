@@ -57,4 +57,23 @@ Group admin cancels membership
 
 User makes friends
 User accepts/rejects friendship
-User
+
+
+
+# Browsing
+
+User views talks
+User views groups
+User views events
+
+OK - User lists talks in "My talks"
+User lists talks that he owns
+
+User lists groups in "My groups"
+User lists groups that he owns
+User lists groups that he talks
+User lists groups that he is member
+
+User lists events in "My events"
+User lists events that he owns
+User lists events that he talks
