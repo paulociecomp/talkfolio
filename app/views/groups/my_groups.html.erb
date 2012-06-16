@@ -1,8 +1,18 @@
-<%= link_to t(:found_a_group), new_group_path %>
+<nav>
+  <ul>
+    <li><%= link_to t(:found_a_group), new_group_path %></li>
+  </ul>
+</nav>
 
-<% @groups.each do |group| %>
-  <article>
-    <h1><%= group.name %></h1>
-    <p><%= group.description %></p>
-  </article>
-<% end %>
+<header>
+  <h1><%= t(:my_groups) %></h1>
+</header>
+
+<section>
+  <% @groups.each do |group| %>
+    <article>
+      <h1><%= group.name %></h1>
+      <p><%= group.description %></p>
+    </article>
+  <% end %>
+</section>
