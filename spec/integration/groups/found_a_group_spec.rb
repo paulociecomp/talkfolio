@@ -4,7 +4,8 @@ describe "User founds a group" do
 
   context "with valid inputs" do
     before do
-      visit "/"
+      integration_sign_in!
+
       click_link "My groups"
       click_link "Found a group"
 

@@ -22,5 +22,5 @@ Talkfolio::Application.routes.draw do
     put   "groups/:group_id/accept_talks",    :action => :accept, :as => :accept_talks
   end
 
-  root :to => 'talks#my_talks'
+  root :to => 'site#index'
 end

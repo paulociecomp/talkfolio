@@ -20,11 +20,15 @@ Group admin adds a group admin
 Group admin removes a group admin
 Group admin chooses if group can accept any talk from members
 
+# GROUP MEMBERSHIP
+
 User requests membership for a group
 Group admin confirms a group member
 Group admin cancels membership
 
-User views talks
+# VIEWS
+
+User views talks [show action]
 User lists groups that he owns
 User lists groups that he talks
 User lists groups that he is member

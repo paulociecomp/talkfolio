@@ -11,6 +11,8 @@ describe "Group admin accepts many talk submitions at once" do
     group.submit_talk(talk_2)
     group.submit_talk(talk_3)
 
+    integration_sign_in!
+
     visit group_path(group)
     click_link "Manage talks"
 

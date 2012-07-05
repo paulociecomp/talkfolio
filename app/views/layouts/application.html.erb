@@ -11,16 +11,11 @@
 <div id="topbar-container">
   <section id="topbar">
     <div id="logo">
-      <h1>talkfolio</h1>
+      <h1><%= link_to "talkfolio", root_path %></h1>
     </div>
 
     <nav>
-      <ul>
-        <li><%= link_to t(:my_talks), my_talks_path %></li>
-        <li><%= link_to t(:my_groups), my_groups_path %></li>
-        <li><span class="separator">|</span></li>
-        <li><a>Sign out</a></li>
-      </ul>
+      <%= render "layouts/top_menu" %>
     </nav>
   </section>
 </div>

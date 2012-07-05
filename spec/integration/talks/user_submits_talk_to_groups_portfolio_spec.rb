@@ -5,7 +5,8 @@ describe "User submits talk to group's portfolio" do
   let!(:talk) { Talk.create(:title => "Ruby", :description => "Hi!") }
 
   before do
-    visit "/"
+    integration_sign_in!
+    
     click_link "My groups"
     click_link "Ta safo"
     click_link "Submit talk"

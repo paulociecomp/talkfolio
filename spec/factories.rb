@@ -14,4 +14,10 @@ FactoryGirl.define do
     receiver_type "Group"
     talk_id 1
   end
+
+  factory :base_user, :class => User do
+    sequence(:email) { |i| "mail#{i}@mail.com" }
+    password "123456"
+    password_confirmation "123456"
+  end
 end

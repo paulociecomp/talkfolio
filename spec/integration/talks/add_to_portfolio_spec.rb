@@ -2,7 +2,9 @@ require "spec_helper"
 
 describe "Add talk to portfolio" do
   before do
-    visit "/"
+
+    integration_sign_in!
+    
     click_link "My talks"
     click_link "Add talk"
 
