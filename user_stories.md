@@ -29,8 +29,15 @@ User lists groups that he owns
 User lists groups that he talks
 User lists groups that he is member
 
+# AVATARS
 
+Group admin can add a Group avatar
+User can add a personal avatar
 
+# TALK PRESENTATION
+
+User can add a google docs presentation
+User can add a slide share presentation
 
 
 
