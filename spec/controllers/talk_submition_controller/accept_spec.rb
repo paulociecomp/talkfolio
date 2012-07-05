@@ -6,14 +6,15 @@ describe TalkSubmitionsController, "PUT :accept" do
   let!(:talk_1) { FactoryGirl.create :talk }
   let!(:talk_2) { FactoryGirl.create :talk }
 
-  let(:talk_ids) { [ talk_1.id, talk_2.id ]
-  }
+  let(:talk_ids) { {"talk_#{talk_1.id}"=>talk_1.id, "talk_#{talk_2.id}"=>talk_2.id} }
+  
+  before do
+    group.submit_talk talk_1
+    group.submit_talk talk_2
+  end
 
   context "with valid params" do
     before do
-      group.submit_talk talk_1
-      group.submit_talk talk_2
-
       put :accept, :group_id => group.id, :talk_ids => talk_ids, :action => :accept
     end
 
@@ -28,6 +29,14 @@ describe TalkSubmitionsController, "PUT :accept" do
 
     it "sends flash notice" do
       flash[:notice].should == "You accepted talks to this group."
+    end
+  end
+
+  context "with blank ids" do
+    it "doesn't raise error" do
+      expect {
+        put :accept, :group_id => group.id, :talk_ids => {:id => 0}, :action => :accept
+      }.to_not raise_error
     end
   end
 end

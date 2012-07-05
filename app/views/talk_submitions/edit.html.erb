@@ -2,8 +2,8 @@
   <%= form_for :talk_ids, :url => accept_talks_path, :method => :put do |f| %>
     <% @pending_talks.each do |talk| %>
 
-      <%= f.label :id, talk.title %>
-      <%= f.check_box :id, {}, talk.id %>
+      <%= f.label "talk_#{talk.id}", talk.title %>
+      <%= f.check_box "talk_#{talk.id}", {}, talk.id, 0 %>
 
     <% end %>
 
