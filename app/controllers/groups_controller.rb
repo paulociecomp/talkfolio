@@ -8,7 +8,7 @@ class GroupsController < ApplicationController
 
   def show
     @group = Group.find(params[:id])
-    @portfolio = @group.talks
+    @portfolio = @group.accepted_talks
   end
 
   def create

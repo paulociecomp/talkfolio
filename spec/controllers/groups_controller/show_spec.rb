@@ -8,6 +8,7 @@ describe GroupsController, "GET show" do
     @group = FactoryGirl.create :group
     @group.submit_talk talk_1
     @group.submit_talk talk_2
+    @group.accept_talk talk_2
 
     get :show, :id => @group.id
   end
@@ -20,7 +21,7 @@ describe GroupsController, "GET show" do
     assigns[:group].should be_kind_of Group
   end
 
-  it "assigns group's talks as portfolio" do
-    assigns[:portfolio].should == [talk_1, talk_2]
+  it "assigns group's accepted talks as portfolio" do
+    assigns[:portfolio].should == [talk_2]
   end
 end

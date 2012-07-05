@@ -8,6 +8,7 @@
 [OK]     User lists groups in "My groups"
 [OK]     User lists talks that he owns
 [OK]     Group admin accepts a talk from a talk submitter
+[OK]     User sees only accepted talks in any group view
 
 # TALK SUBMITIONS
 Group admin rejects a talk from a talk submitter
@@ -28,9 +29,8 @@ User lists groups that he owns
 User lists groups that he talks
 User lists groups that he is member
 
-# GROUP VIEW
 
-User sees only accepted talks
+
 
 
 
