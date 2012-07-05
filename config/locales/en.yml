@@ -13,3 +13,8 @@ en:
 
   submit_talk: "Submit talk"
   you_submited_a_talk_to_this_group: "You submited a talk to this group."
+  manage_talks: "Manage talks"
+
+  accept_talks: "Accept"
+
+  you_accepted_talks_to_this_group: "You accepted talks to this group."

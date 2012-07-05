@@ -19,9 +19,10 @@ ActiveRecord::Schema.define(:version => 20120616215356) do
   end
 
   create_table "talk_submitions", :force => true do |t|
-    t.integer "talk_id",                 :null => false
-    t.string  "submition_receiver_type", :null => false
-    t.integer "submition_receiver_id",   :null => false
+    t.integer "talk_id",                          :null => false
+    t.string  "receiver_type",                    :null => false
+    t.boolean "accepted",      :default => false
+    t.integer "receiver_id",                      :null => false
   end
 
   create_table "talks", :force => true do |t|

@@ -1,0 +1,12 @@
+<section id="pending_talks">
+  <%= form_for :talk_ids, :url => accept_talks_path, :method => :put do |f| %>
+    <% @pending_talks.each do |talk| %>
+
+      <%= f.label "#{talk.id}", talk.title %>
+      <%= f.check_box "#{talk.id}" %>
+
+    <% end %>
+
+    <%= f.submit t(:accept_talks) %>
+  <% end %>
+</section>

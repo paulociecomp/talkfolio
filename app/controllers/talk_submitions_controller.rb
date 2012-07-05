@@ -13,4 +13,22 @@ class TalkSubmitionsController < ApplicationController
     flash[:notice] = t(:you_submited_a_talk_to_this_group)
     redirect_to @group
   end
+
+  def edit
+    @group = Group.find(params[:group_id])
+    @pending_talks = @group.pending_talks
+  end
+
+  def accept
+    group = Group.find(params[:group_id])
+
+    params[:talk_ids].each do |talk|
+      talk_id = talk.last
+      talk = Talk.find(talk_id)
+      
+      group.accept_talk(talk)
+    end
+    flash[:notice] = t(:you_accepted_talks_to_this_group)
+    redirect_to group_path(group)
+  end
 end

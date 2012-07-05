@@ -7,9 +7,10 @@
 [OK]     User views group's portfolio
 [OK]     User lists groups in "My groups"
 [OK]     User lists talks that he owns
+[OK]     Group admin accepts a talk from a talk submitter
 
 # TALK SUBMITIONS
-Group admin accepts or rejects a talk from a talk submitter
+Group admin rejects a talk from a talk submitter
 Group admin removes talk
 
 # GROUP ADMIN
@@ -27,7 +28,9 @@ User lists groups that he owns
 User lists groups that he talks
 User lists groups that he is member
 
+# GROUP VIEW
 
+User sees only accepted talks
 
 
 

@@ -9,4 +9,8 @@ class Talk < ActiveRecord::Base
     save
     self
   end
+
+  def talk_submition_of(submition_receiver)
+    submition_receiver.talk_submitions.find_by_talk_id(self.id)
+  end
 end

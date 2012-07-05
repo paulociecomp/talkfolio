@@ -2,8 +2,9 @@ class CreateTalkSubmitions < ActiveRecord::Migration
   def up
     create_table :talk_submitions do |t|
       t.references :talk, :null => false
-      t.string :submition_receiver_type, :null => false
-      t.references :submition_receiver, :null => false
+      t.string :receiver_type, :null => false
+      t.boolean :accepted, :default => false
+      t.references :receiver, :null => false
     end
   end
 
