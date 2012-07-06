@@ -1,13 +1,15 @@
 require "spec_helper"
 
 describe "Group admin accepts membership request" do
-  let(:group) { FactoryGirl.create :group }
+  let(:group)   { FactoryGirl.create :group }
+  let(:group2)  { FactoryGirl.create :group }
   let(:user_1)  { FactoryGirl.create :base_user, :name => "Felipe" }
   let(:user_2)  { FactoryGirl.create :base_user, :name => "Luiz" }
   let(:user_3)  { FactoryGirl.create :base_user, :name => "Fabio" }
 
   before do
     group.request_membership_for(user_1)
+    group2.request_membership_for(user_1)
     group.request_membership_for(user_2)
     group.request_membership_for(user_3)
 
