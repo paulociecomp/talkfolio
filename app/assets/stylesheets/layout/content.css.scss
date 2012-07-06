@@ -7,14 +7,6 @@ div#content-container {
   border: 1px solid #777;
 }
 
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 section#content {
   nav {
     border: 1px solid #e0e0e0;
@@ -62,14 +54,13 @@ section#content {
   }
 
   aside section.groups {
-    a, span {
+    a {
       color: #666;
+      font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
     }
 
     article.group {
       display: inline-block;
-
-
     }
   }
 

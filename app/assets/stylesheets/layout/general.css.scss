@@ -17,3 +17,15 @@ ul, li {
   list-style: none; 
   padding: 0px;
 }
+
+p {
+  font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
