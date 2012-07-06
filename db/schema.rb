@@ -11,11 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120705203757) do
+ActiveRecord::Schema.define(:version => 20120706020415) do
 
   create_table "groups", :force => true do |t|
     t.string "name",        :null => false
     t.string "description", :null => false
+  end
+
+  create_table "members", :force => true do |t|
+    t.boolean "accepted", :default => false
+    t.integer "user_id",                     :null => false
+    t.integer "group_id",                    :null => false
   end
 
   create_table "talk_submitions", :force => true do |t|

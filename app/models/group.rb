@@ -4,6 +4,8 @@ class Group < ActiveRecord::Base
   has_many :talk_submitions, :as => :receiver
   has_many :talks, :through => :talk_submitions
 
+  has_many :members
+
   def found
     save
     self
@@ -29,5 +31,12 @@ class Group < ActiveRecord::Base
 
   def accept_talk(talk)
     talk.talk_submition_of(self).accept
+  end
+
+  def request_membership_for(user)
+    member = members.build
+    member.user = user
+    member.save
+    member
   end
 end

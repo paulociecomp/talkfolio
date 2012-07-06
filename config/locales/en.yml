@@ -22,3 +22,6 @@ en:
   accept_talks: "Accept"
 
   you_accepted_talks_to_this_group: "You accepted talks to this group."
+
+  join_group: "Join group"
+  membership_request_was_sent_to_moderators: "A membership request was sent to this group moderators. Please wait for their response."

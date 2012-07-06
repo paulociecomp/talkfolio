@@ -9,6 +9,7 @@
 [OK]     User lists talks that he owns
 [OK]     Group admin accepts a talk from a talk submitter
 [OK]     User sees only accepted talks in any group view
+[OK]     User requests to join in a group
 
 # TALK SUBMITIONS
 Group admin rejects a talk from a talk submitter
@@ -22,7 +23,6 @@ Group admin chooses if group can accept any talk from members
 
 # GROUP MEMBERSHIP
 
-User requests membership for a group
 Group admin confirms a group member
 Group admin cancels membership
 

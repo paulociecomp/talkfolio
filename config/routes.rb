@@ -9,9 +9,9 @@ Talkfolio::Application.routes.draw do
   end
 
   controller :groups do
-    get   "group/:id",                :action => :show,         :as => :group
     get   "my_groups",                :action => :my_groups,    :as => :my_groups
     get   "groups/new",               :action => :new,          :as => :new_group
+    get   "groups/:id",               :action => :show,         :as => :group
     post  "groups",                   :action => :create,       :as => :groups
  end
 
@@ -20,6 +20,10 @@ Talkfolio::Application.routes.draw do
     post  "groups/:group_id/talk_submitions", :action => :create, :as => :talk_submitions
     get   "groups/:group_id/talk_submitions", :action => :edit,   :as => :edit_talk_submitions
     put   "groups/:group_id/accept_talks",    :action => :accept, :as => :accept_talks
+  end
+
+  controller :memberships do
+    post "groups/:group_id/memberships", :action => :create, :as => :memberships
   end
 
   root :to => 'site#index'
