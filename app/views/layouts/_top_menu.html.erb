@@ -1,5 +1,12 @@
 <ul>
   <% if user_signed_in? %>
+
+    <li><%= link_to t(:talks), "#" %></li>
+    <li><%= link_to t(:groups), "#" %></li>
+
+    <li><span class="separator">|</span></li>
+
+    <li><%= link_to t(:my_profile), talker_path(current_user) %></li>
     <li><%= link_to t(:my_talks), my_talks_path %></li>
     <li><%= link_to t(:my_groups), my_groups_path %></li>
     
