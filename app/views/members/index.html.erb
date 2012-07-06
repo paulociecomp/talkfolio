@@ -1,6 +1,12 @@
+<%= render "groups/header", :group => @group %>
+
 <h1><%= t(:members) %></h1>
 
-<%= link_to t(:manage_members), edit_group_members_path(@group)  %>
+<nav>
+  <ul>
+    <li><%= link_to t(:manage_members), edit_group_members_path(@group)  %></li>
+  </ul>
+</nav>
 
 <section>
   <% @members.each do |member| %>

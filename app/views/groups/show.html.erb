@@ -1,17 +1,17 @@
+<%= render "header", :group => @group %>
+
 <nav>
   <ul>
-    <li><%= link_to t(:submit_talk), new_talk_submition_path(@group) %></li>
-    <li><%= link_to t(:manage_talks), edit_talk_submitions_path(@group) %></li>
-    <li><%= link_to t(:members), group_members_path(@group) %></li>
     <li>
       <%= link_to t(:join_group), request_group_membership_path(@group), :method => :post %>
     </li>
+    <li><%= link_to t(:submit_talk), new_talk_submition_path(@group) %></li>
+    <li><%= link_to t(:members), group_members_path(@group) %></li>
+    <li><span class="separator">|</span></li>
+    <li><%= link_to t(:manage_talks), edit_talk_submitions_path(@group) %></li>
+    <li><%= link_to t(:manage_members), edit_group_members_path(@group)  %></li>
   </ul>
 </nav>
-
-<header>
-  <h1><%= @group.name %></h1>
-</header>
 
 <p>
   <%= @group.description%>

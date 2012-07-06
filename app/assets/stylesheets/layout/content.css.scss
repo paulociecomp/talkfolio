@@ -21,12 +21,23 @@ section#content {
         color: #333;
       }
     }
+
+    li {
+      display: inline-block;
+      margin-right: 15px;
+    }
   }
 
   header h1, 
   article h1 {
     color: #333;
     font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
+
+    small {
+      color: #a0a0a0;
+      font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+    }
   }
 
   article h1 a {
