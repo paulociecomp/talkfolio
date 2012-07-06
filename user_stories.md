@@ -19,6 +19,7 @@
 [OK]  User views other talk profile
 
 # TALK SUBMITIONS
+User can only submit his talks
 Group admin rejects a talk from a talk submitter
 Group admin removes talk
 
@@ -34,6 +35,7 @@ Group admin cancels membership
 # VIEWS
 
 User views talks [show action]
+User views all groups in groups index
 User lists groups that he owns
 User lists groups that he talks
 User lists groups that he is member
