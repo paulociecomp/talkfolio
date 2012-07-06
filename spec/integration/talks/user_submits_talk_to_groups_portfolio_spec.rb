@@ -1,14 +1,14 @@
 require "spec_helper"
 
 describe "User submits talk to group's portfolio" do
-  let!(:group) { Group.create(:name => "Ta safo", :description => "Hi!") }
-  let!(:talk) { Talk.create(:title => "Ruby", :description => "Hi!") }
+  let!(:group) { FactoryGirl.create :group }
+  let!(:talk)  { FactoryGirl.create :talk }
 
   before do
     integration_sign_in!
     
     click_link "My groups"
-    click_link "Ta safo"
+    click_link group.name
     click_link "Submit talk"
 
     select "Ruby", :from => "talk_id"

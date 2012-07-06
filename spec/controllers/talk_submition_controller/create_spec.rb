@@ -4,8 +4,8 @@ describe TalkSubmitionsController, "POST :create" do
 
   let(:user)    { FactoryGirl.create :base_user }
 
-  let!(:group)  { Group.create(:name => "Hi", :description => "Hoy!") }
-  let!(:talk)   { Talk.create(:title => "Ruby", :description => "Hi!") }
+  let!(:group)  { FactoryGirl.create :group  }
+  let!(:talk)   { FactoryGirl.create :talk  }
 
   context "as signed in user" do
     context "with valid params" do

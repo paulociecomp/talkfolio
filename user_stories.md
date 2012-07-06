@@ -10,6 +10,9 @@
 [OK]     Group admin accepts a talk from a talk submitter
 [OK]     User sees only accepted talks in any group view
 [OK]     User requests to join in a group
+[OK]     Portfolio should belong to user
+
+User should be owner of group on creation
 
 # TALK SUBMITIONS
 Group admin rejects a talk from a talk submitter

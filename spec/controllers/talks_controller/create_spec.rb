@@ -14,8 +14,8 @@ describe TalksController, "POST :create" do
         response.should redirect_to my_talks_path
       end
 
-      it "adds talk to portfolio" do
-        assigns[:talk].should be_persisted
+      it "adds talk to users portfolio" do
+        user.talks.should include assigns[:talk]
       end
 
       it "sends flash notice" do

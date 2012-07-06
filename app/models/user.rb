@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :members
+  has_many :talks
 
   def member_of(group)
     members.find_by_group_id(group.id)

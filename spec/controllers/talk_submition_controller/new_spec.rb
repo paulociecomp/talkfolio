@@ -2,9 +2,9 @@ require "spec_helper"
 
 describe TalkSubmitionsController, "GET :new" do
   let(:user)    { FactoryGirl.create :base_user }  
-  let!(:group)  { Group.create(:name => "Ta safo", :description => "Hi!") }
-  let!(:talk_1) { Talk.create(:title => "Hi", :description => "Hoy!") }
-  let!(:talk_2) { Talk.create(:title => "Hi", :description => "Hoy!") }
+  let!(:group)  { FactoryGirl.create :group }
+  let!(:talk_1) { FactoryGirl.create :talk }
+  let!(:talk_2) { FactoryGirl.create :talk }
 
   context "as signed in user" do
     before do

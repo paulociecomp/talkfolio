@@ -7,6 +7,7 @@ FactoryGirl.define do
   factory :talk do
     title "Write in Ruby!"
     description "Why you should develop in Ruby."
+    user_id 1
   end
 
   factory :talk_submition do

@@ -1,8 +1,8 @@
 require "spec_helper"
 
 describe GroupsController, "GET :show" do
-  let!(:talk_1) { Talk.create(:title => "Hi", :description => "Hoy!") }
-  let!(:talk_2) { Talk.create(:title => "Hi", :description => "Hoy!") }
+  let!(:talk_1) { FactoryGirl.create :talk }
+  let!(:talk_2) { FactoryGirl.create :talk }
 
   before do
     @group = FactoryGirl.create :group

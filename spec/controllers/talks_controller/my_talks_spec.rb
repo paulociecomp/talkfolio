@@ -1,8 +1,8 @@
 require "spec_helper"
 
 describe TalksController, "GET :my_talks" do
-  let!(:talk_1) { Talk.new(:title => "Hi", :description => "Hoy!").add_to_portfolio }
-  let!(:talk_2) { Talk.new(:title => "Hi", :description => "Hoy!").add_to_portfolio }
+  let!(:talk_1) { FactoryGirl.create :talk }
+  let!(:talk_2) { FactoryGirl.create :talk }
 
   let(:user)    { FactoryGirl.create :base_user }
 

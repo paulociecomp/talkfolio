@@ -11,7 +11,7 @@ class TalksController < ApplicationController
   def create
     @talk = Talk.new(params[:talk])
 
-    if @talk.add_to_portfolio
+    if @talk.add_to_user_portfolio(current_user)
       flash[:notice] = "You added a new talk to your portfolio!"
       redirect_to my_talks_path
     end
