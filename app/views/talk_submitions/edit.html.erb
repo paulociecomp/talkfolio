@@ -1,5 +1,11 @@
 <%= render "groups/header", :group => @group %>
 
+<%= render "groups/menu" %> 
+
+<header>
+  <h1><%= t(:manage_talks) %></h1>
+</header>
+
 <section id="pending_talks">
   <%= form_for :talk_ids, :url => accept_talks_path, :method => :put do |f| %>
     <% @pending_talks.each do |talk| %>

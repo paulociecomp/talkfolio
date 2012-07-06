@@ -1,17 +1,19 @@
 <%= render "groups/header", :group => @group %>
 
-<h1><%= t(:members) %></h1>
+<%= render "groups/menu" %>
 
-<nav>
-  <ul>
-    <li><%= link_to t(:manage_members), edit_group_members_path(@group)  %></li>
-  </ul>
-</nav>
+<header>
+  <h1><%= t(:members) %></h1>
+</header>
 
-<section>
+<section class="members">
   <% @members.each do |member| %>
     <article>
-      <h1><%= member.name %></h1>
+      <%= image_tag avatar_url member, :size => 96 %>
+      <h2>
+        <%= link_to member.name, talker_path(member.user) %>
+        <small>(<%= t(member.role) || t(:member) %>)</small>
+      </h2>
     </article>
   <% end %>
 </section>

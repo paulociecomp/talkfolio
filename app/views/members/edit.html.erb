@@ -1,5 +1,11 @@
 <%= render "groups/header", :group => @group %>
 
+<%= render "groups/menu" %>
+
+<header>
+  <h1><%= t(:manage_members) %></h1>
+</header>
+
 <section id="pending_members">
   <%= form_for :user_ids, :url => accept_group_members_path, :method => :put do |f| %>
     <% @pending_members.each do |member| %>

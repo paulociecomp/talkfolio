@@ -1,11 +1,12 @@
-<section class="groups">
+<div class="groups">
   <% groups.each_with_index do |group,index| %>
-    <article class="group">
+    <span class="group">
       <%= link_to group.name, group_path(group) %>
-      
-      <% if index + 1 < groups.count %>
-        <span>|</span>
-      <% end %>
-    </article>
+    </span>
+
+    <% if index + 1 < groups.count %>
+      <span>|</span>
+    <% end %>
+    
   <%end%>
-</section>
+</div>

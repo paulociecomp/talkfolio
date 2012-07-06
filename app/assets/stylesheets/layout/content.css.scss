@@ -1,3 +1,4 @@
+
 div#content-container {
   margin-top: 60px;
   padding-bottom: 60px; 
@@ -28,7 +29,8 @@ section#content {
   }
 
   & > header h1, 
-  & > article h1 {
+  & > article h1,
+  article h2 {
     &, a {
       color: #333;
       font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
@@ -42,7 +44,11 @@ section#content {
     }
   }
 
-  section header h1 {
+  article h2 {
+   font-size: 1em; 
+  }
+
+  section header h1, {
       color: #666;
       font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
       font-size: 1.5em;
@@ -56,8 +62,11 @@ section#content {
       margin-top: 14px;
   }
 
-  article h1 a {
-    color: #333;
+  article h1,
+  article h2 {
+    & a {
+      color: #333;
+    }
   }
 
   section.groups,
@@ -68,8 +77,8 @@ section#content {
     }
   }
 
-  aside section.groups,
-  aside article.talker {
+  aside div.groups,
+  aside div.talker {
     a, span {
       color: #666;
       font-family: "Myriad Pro", Helvetica, Arial, sans-serif;

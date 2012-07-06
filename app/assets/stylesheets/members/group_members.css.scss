@@ -1,0 +1,13 @@
+section#content {
+  > header.image,
+  section.members article {
+    height: 120px; 
+
+    img {
+      float: left; 
+      margin-right: 20px;
+      padding: 7px;
+      border: 1px solid #ccc;
+    }
+  }
+}

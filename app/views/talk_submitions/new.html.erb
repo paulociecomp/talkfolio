@@ -1,5 +1,11 @@
 <%= render "groups/header", :group => @group %>
 
+<%= render "groups/menu" %>
+
+<header>
+  <h1><%= t(:submit_talk) %></h1>
+</header>
+
 <%= form_for :talk, :url => talk_submitions_path do |f| %>
   <%= f.select :id, @talks.collect { |t| [t.title, t.id] } %>
   <%= f.submit t(:submit_talk) %>

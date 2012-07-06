@@ -1,4 +1,5 @@
-<header>
+<header class="image">
+  <%= image_tag avatar_url @talker, :size => 96 %>
   <h1>
     <%= link_to @talker.name, talker_path(@talker) %> 
     <small><%= t(:talker) %></small>
