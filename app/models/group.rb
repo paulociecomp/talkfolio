@@ -9,7 +9,13 @@ class Group < ActiveRecord::Base
   has_many :members
 
   def self.found_by(founder, params = {})
-    founder.groups.create(params)
+    group = founder.groups.create(params)
+
+    member = group.request_membership_for(founder)
+    group.accept_member(founder)
+    member.change_role(:founder)
+
+    group
   end
 
   def submit_talk(talk)

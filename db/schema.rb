@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20120706033957) do
     t.boolean "accepted", :default => false
     t.integer "user_id",                     :null => false
     t.integer "group_id",                    :null => false
+    t.string  "role"
   end
 
   create_table "talk_submitions", :force => true do |t|

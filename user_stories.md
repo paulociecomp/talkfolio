@@ -13,6 +13,10 @@
 [OK]     Portfolio should belong to user
 [OK]     User should be founder of group on foundation
 [OK]     Group admin confirms a group member
+[OK]    Group founder is first member of group as a founder role
+
+User lists groups where talk is submited
+Shows talker in talk list if it's not in talker's portfolio
 
 # TALK SUBMITIONS
 Group admin rejects a talk from a talk submitter

@@ -15,4 +15,17 @@ class Member < ActiveRecord::Base
     self.accepted = true
     save
   end
+
+  ROLES = ['founder', 'admin']
+
+  def change_role(role)
+    self.role = role.to_s
+    save
+  end
+
+  ROLES.each do |role|
+    define_method "#{role}?" do
+      self.role == role
+    end
+  end
 end

@@ -15,6 +15,10 @@ describe Group, "foundation" do
     subject.founder.should == user
   end
 
+  it "sets user as group's 1st member as founder role" do
+    user.member_of(subject).role.should == "founder"
+  end
+
   it "returns a new group" do
     subject.should be_kind_of Group
   end
