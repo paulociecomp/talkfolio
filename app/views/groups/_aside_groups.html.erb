@@ -1,0 +1,7 @@
+<section class="groups">
+  <% groups.each do |group| %>
+    <article class="group">
+      <%= link_to group.name, group_path(group) %>
+    </article>
+  <%end%>
+</section>

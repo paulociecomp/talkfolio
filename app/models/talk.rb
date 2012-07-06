@@ -4,7 +4,9 @@ class Talk < ActiveRecord::Base
   belongs_to :user
 
   has_many :submitions, :class_name => "TalkSubmition"
-  has_many :groups,     :through => :submitions
+  has_many :groups,     :through => :submitions, 
+                        :source => :receiver, 
+                        :source_type => 'Group'
 
 
   def add_to_user_portfolio(user)

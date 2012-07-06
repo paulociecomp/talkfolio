@@ -7,6 +7,14 @@ div#content-container {
   border: 1px solid #777;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 section#content {
   nav {
     border: 1px solid #e0e0e0;
@@ -17,7 +25,6 @@ section#content {
       
       a {
         font: normal 13px Arial, sans-serif;
-        text-decoration: none;
         color: #333;
       }
     }
@@ -33,7 +40,6 @@ section#content {
     &, a {
       color: #333;
       font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
-      text-decoration: none;
       font-size: 1.5em;
     }
 
@@ -46,17 +52,24 @@ section#content {
 
   article h1 a {
     color: #333;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   section.groups {
     article.group {
       h1 { margin-bottom: 0px; }
       p { margin-top: 7px; }
+    }
+  }
+
+  aside section.groups {
+    a, span {
+      color: #666;
+    }
+
+    article.group {
+      display: inline-block;
+
+
     }
   }
 

@@ -1,21 +1,21 @@
 
-[OK]     User adds talk to his portfolio
-[OK]     User founds a group
-[OK]     User submits a talk to a group's portfolio
-[OK]     User views groups
-[OK]     User lists talks in "My talks"
-[OK]     User views group's portfolio
-[OK]     User lists groups in "My groups"
-[OK]     User lists talks that he owns
-[OK]     Group admin accepts a talk from a talk submitter
-[OK]     User sees only accepted talks in any group view
-[OK]     User requests to join in a group
-[OK]     Portfolio should belong to user
-[OK]     User should be founder of group on foundation
-[OK]     Group admin confirms a group member
-[OK]    Group founder is first member of group as a founder role
+[OK]  User adds talk to his portfolio
+[OK]  User founds a group
+[OK]  User submits a talk to a group's portfolio
+[OK]  User views groups
+[OK]  User lists talks in "My talks"
+[OK]  User views group's portfolio
+[OK]  User lists groups in "My groups"
+[OK]  User lists talks that he owns
+[OK]  Group admin accepts a talk from a talk submitter
+[OK]  User sees only accepted talks in any group view
+[OK]  User requests to join in a group
+[OK]  Portfolio should belong to user
+[OK]  User should be founder of group on foundation
+[OK]  Group admin confirms a group member
+[OK]  Group founder is first member of group as a founder role
+[OK]  User lists groups where talk is submited
 
-User lists groups where talk is submited
 Shows talker in talk list if it's not in talker's portfolio
 
 # TALK SUBMITIONS

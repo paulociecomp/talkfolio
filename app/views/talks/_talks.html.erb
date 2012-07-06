@@ -3,6 +3,11 @@
     <article class="talk">
       <h1><%= talk.title %></h1>
       <p><%= talk.description %></p>
+
+      <aside>
+        <%= render "groups/aside_groups", :groups => talk.groups %>
+      </aside>
+      
     </article>
   <% end %>
 </section>
