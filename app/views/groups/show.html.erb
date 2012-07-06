@@ -2,8 +2,9 @@
   <ul>
     <li><%= link_to t(:submit_talk), new_talk_submition_path(@group) %></li>
     <li><%= link_to t(:manage_talks), edit_talk_submitions_path(@group) %></li>
+    <li><%= link_to t(:members), group_members_path(@group) %></li>
     <li>
-      <%= link_to t(:join_group), memberships_path(@group), :method => :post %>
+      <%= link_to t(:join_group), request_group_membership_path(@group), :method => :post %>
     </li>
   </ul>
 </nav>

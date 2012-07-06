@@ -17,9 +17,21 @@ FactoryGirl.define do
     talk_id 1
   end
 
+  factory :member do
+    user_id 1
+    group_id 1
+  end
+
+  factory :accepted_member, :class => Member do
+    user_id 1
+    group_id 1
+    accepted true
+  end
+
   factory :base_user, :class => User do
     sequence(:email) { |i| "mail#{i}@mail.com" }
     password "123456"
     password_confirmation "123456"
+    name "Felipe"
   end
 end

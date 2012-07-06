@@ -11,7 +11,8 @@
 [OK]     User sees only accepted talks in any group view
 [OK]     User requests to join in a group
 [OK]     Portfolio should belong to user
-[OK]     User should be owner of group on foundation
+[OK]     User should be founder of group on foundation
+[OK]     Group admin confirms a group member
 
 # TALK SUBMITIONS
 Group admin rejects a talk from a talk submitter
@@ -24,8 +25,6 @@ Group admin removes a group admin
 Group admin chooses if group can accept any talk from members
 
 # GROUP MEMBERSHIP
-
-Group admin confirms a group member
 Group admin cancels membership
 
 # VIEWS
@@ -42,8 +41,10 @@ User can add a personal avatar
 
 # TALK PRESENTATION
 
-User can add a google docs presentation
-User can add a slide share presentation
+User can embed a google docs presentation
+User can embed a slide share presentation
+User can embed a youtube video
+User can embed a vimeo video
 
 
 

@@ -1,0 +1,11 @@
+<h1><%= t(:members) %></h1>
+
+<%= link_to t(:manage_members), edit_group_members_path(@group)  %>
+
+<section>
+  <% @members.each do |member| %>
+    <article>
+      <h1><%= member.name %></h1>
+    </article>
+  <% end %>
+</section>

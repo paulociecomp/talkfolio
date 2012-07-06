@@ -19,9 +19,12 @@ en:
   you_submited_a_talk_to_this_group: "You submited a talk to this group."
   manage_talks: "Manage talks"
 
-  accept_talks: "Accept"
+  accept: "Accept"
 
   you_accepted_talks_to_this_group: "You accepted talks to this group."
 
   join_group: "Join group"
   membership_request_was_sent_to_moderators: "A membership request was sent to this group moderators. Please wait for their response."
+
+  manage_members: "Manage members"
+  you_accepted_membership_requests_for_group: "You accepted membership requests of this group."

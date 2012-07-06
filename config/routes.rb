@@ -22,8 +22,11 @@ Talkfolio::Application.routes.draw do
     put   "groups/:group_id/accept_talks",    :action => :accept, :as => :accept_talks
   end
 
-  controller :memberships do
-    post "groups/:group_id/memberships", :action => :create, :as => :memberships
+  controller :members do
+    get  "groups/:group_id/memberships",        :action => :index,  :as => :group_members
+    post "groups/:group_id/request_membership", :action => :create, :as => :request_group_membership
+    get  "groups/:group_id/edit_members",       :action => :edit,   :as => :edit_group_members
+    put  "groups/:group_id/accept_members",     :action => :accept, :as => :accept_group_members
   end
 
   root :to => 'site#index'

@@ -2,7 +2,7 @@ class TalkSubmition < ActiveRecord::Base
   belongs_to :talk
   belongs_to :receiver, :polymorphic => true
 
-  def accept
+  def accept!
     self.accepted = true
     save
   end

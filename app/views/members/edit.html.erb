@@ -1,0 +1,12 @@
+<section id="pending_members">
+  <%= form_for :user_ids, :url => accept_group_members_path, :method => :put do |f| %>
+    <% @pending_members.each do |user| %>
+
+      <%= f.label "user_#{user.id}", user.email %>
+      <%= f.check_box "user_#{user.id}", {}, user.id, 0 %>
+
+    <% end %>
+
+    <%= f.submit t(:accept) %>
+  <% end %>
+</section>

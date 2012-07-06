@@ -1,8 +1,8 @@
 require "spec_helper"
 
-describe TalkSubmition do
+describe Member do
 
-  subject { FactoryGirl.create :talk_submition }
+  subject { FactoryGirl.create :member }
 
   it "is accepted" do
     subject.accept!

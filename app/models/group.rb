@@ -24,14 +24,26 @@ class Group < ActiveRecord::Base
     end.compact
   end
 
+  def pending_members
+    members.pending
+  end
+
   def accepted_talks
     talk_submitions.collect do |submition| 
       submition.talk if submition.accepted?
     end.compact
   end
 
+  def accepted_members
+    members.accepted
+  end
+
+  def accept_member(user)
+    members.find_by_user_id(user.id).accept!
+  end
+
   def accept_talk(talk)
-    talk_submitions.find_by_talk_id(talk.id).accept
+    talk_submitions.find_by_talk_id(talk.id).accept!
   end
 
   def request_membership_for(user)
