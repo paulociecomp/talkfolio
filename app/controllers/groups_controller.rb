@@ -1,4 +1,6 @@
 class GroupsController < ApplicationController
+  before_filter :authenticate_user!, :except => :show
+
   def my_groups
     @groups = Group.all
   end

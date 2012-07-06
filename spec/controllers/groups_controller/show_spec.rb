@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe GroupsController, "GET show" do
+describe GroupsController, "GET :show" do
   let!(:talk_1) { Talk.create(:title => "Hi", :description => "Hoy!") }
   let!(:talk_2) { Talk.create(:title => "Hi", :description => "Hoy!") }
 

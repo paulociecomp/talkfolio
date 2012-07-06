@@ -1,4 +1,6 @@
 class TalkSubmitionsController < ApplicationController
+  before_filter :authenticate_user!
+
   def new
     @group = Group.find(params[:group_id])
     @talks = Talk.all

@@ -1,4 +1,6 @@
 class TalksController < ApplicationController
+  before_filter :authenticate_user!
+
   def my_talks
     @talks = Talk.all
   end

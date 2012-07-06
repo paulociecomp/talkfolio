@@ -1,20 +1,33 @@
 require "spec_helper"
 
-describe TalksController, "my talks" do
+describe TalksController, "GET :my_talks" do
   let!(:talk_1) { Talk.new(:title => "Hi", :description => "Hoy!").add_to_portfolio }
   let!(:talk_2) { Talk.new(:title => "Hi", :description => "Hoy!").add_to_portfolio }
 
-  context "GET my_talks" do
+  let(:user)    { FactoryGirl.create :base_user }
+
+  context "as signed in user" do
     before do
+      sign_in user
       get :my_talks
     end
 
-    it "responds successfully" do
+    it "returns success" do
       response.should be_success
     end
 
     it "assigns all talks" do
       assigns[:talks].should == [talk_1, talk_2]
+    end
+  end
+
+  context "with signed out user" do
+    before do
+      get :my_talks
+    end
+
+    it "redirects to new user session path" do
+      response.should redirect_to new_user_session_path
     end
   end
 end
