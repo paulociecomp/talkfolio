@@ -8,11 +8,4 @@
   <h1><%= t(:my_groups) %></h1>
 </header>
 
-<section>
-  <% @groups.each do |group| %>
-    <article>
-      <h1><%= link_to group.name, group %></h1>
-      <p><%= group.description %></p>
-    </article>
-  <% end %>
-</section>
+<%= render "groups", :groups => @groups %>

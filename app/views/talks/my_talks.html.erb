@@ -1,18 +1,11 @@
+<header>
+  <h1><%= t(:my_talks) %></h1>
+</header>
+
 <nav>
   <ul>
     <li><%= link_to t(:add_talk), new_talk_path %></li>
   </ul>
 </nav>
 
-<header>
-  <h1><%= t(:my_talks) %></h1>
-</header>
-
-<section>
-  <% @talks.each do |talk| %>
-    <article>
-      <h1><%= talk.title %></h1>
-      <p><%= talk.description %></p>
-    </article>
-  <% end %>
-</section>
+<%= render "talks", :talks => @talks %>

@@ -1,0 +1,8 @@
+<section class="groups">
+  <% groups.each do |group| %>
+    <article class="group">
+      <h1><%= link_to group.name, group %></h1>
+      <p><%= group.description %></p>
+    </article>
+  <% end %>
+</section>

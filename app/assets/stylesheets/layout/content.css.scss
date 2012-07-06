@@ -30,8 +30,12 @@ section#content {
 
   header h1, 
   article h1 {
-    color: #333;
-    font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
+    &, a {
+      color: #333;
+      font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
 
     small {
       color: #a0a0a0;
@@ -46,6 +50,20 @@ section#content {
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  section.groups {
+    article.group {
+      h1 { margin-bottom: 0px; }
+      p { margin-top: 7px; }
+    }
+  }
+
+  section.talks {
+    article.talk {
+      h1 { margin-bottom: 0px; }
+      p { margin-top: 7px; }
     }
   }
 }
