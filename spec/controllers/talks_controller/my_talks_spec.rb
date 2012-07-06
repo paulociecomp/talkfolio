@@ -1,8 +1,8 @@
 require "spec_helper"
 
 describe TalksController, "GET :my_talks" do
-  let!(:talk_1) { FactoryGirl.create :talk }
-  let!(:talk_2) { FactoryGirl.create :talk }
+  let!(:users_talk) { FactoryGirl.create :talk, :user_id => user.id }
+  let!(:talk_2) { FactoryGirl.create :talk, :user_id => 100 }
 
   let(:user)    { FactoryGirl.create :base_user }
 
@@ -16,8 +16,8 @@ describe TalksController, "GET :my_talks" do
       response.should be_success
     end
 
-    it "assigns all talks" do
-      assigns[:talks].should == [talk_1, talk_2]
+    it "assigns user's talks" do
+      assigns[:talks].should == [users_talk]
     end
   end
 
