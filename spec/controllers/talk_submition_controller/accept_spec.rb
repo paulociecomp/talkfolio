@@ -23,8 +23,8 @@ describe TalkSubmitionsController, "PUT :accept" do
       end
 
       it "accepts talks" do
-        talk_1.talk_submition_of(group).should be_accepted
-        talk_2.talk_submition_of(group).should be_accepted
+        talk_1.submition_of(group).should be_accepted
+        talk_2.submition_of(group).should be_accepted
       end
 
       it "redirects to group path" do

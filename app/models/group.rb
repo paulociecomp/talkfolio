@@ -2,7 +2,7 @@ class Group < ActiveRecord::Base
   attr_accessible :name, :description
 
   has_many :talk_submitions, :as => :receiver
-  has_many :talks, :through => :talk_submitions
+  has_many :talks,           :through => :talk_submitions
 
   has_many :members
 
@@ -30,7 +30,7 @@ class Group < ActiveRecord::Base
   end
 
   def accept_talk(talk)
-    talk.talk_submition_of(self).accept
+    talk_submitions.find_by_talk_id(talk.id).accept
   end
 
   def request_membership_for(user)
