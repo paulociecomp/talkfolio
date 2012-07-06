@@ -2,6 +2,7 @@ FactoryGirl.define do
   factory :group do
     name "Ta Safo!"
     description "The best Agile community ever!"
+    founder_id 1
   end
 
   factory :talk do

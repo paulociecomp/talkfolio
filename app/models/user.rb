@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
 
   has_many :members
   has_many :talks
+  has_many :groups, :foreign_key => :founder_id
 
   def member_of(group)
     members.find_by_group_id(group.id)

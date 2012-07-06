@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe MembershipsController, "POST :create" do
   let(:user)    { FactoryGirl.create :base_user }
-  let!(:group)  { Group.create(:name => "Hi", :description => "Hoy!") }
+  let!(:group)  { FactoryGirl.create :group }
 
   context "as signed in user" do
     context "with valid params" do

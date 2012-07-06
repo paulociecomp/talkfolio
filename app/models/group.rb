@@ -1,14 +1,15 @@
 class Group < ActiveRecord::Base
   attr_accessible :name, :description
 
+  belongs_to :founder, :class_name => "User"
+
   has_many :talk_submitions, :as => :receiver
   has_many :talks,           :through => :talk_submitions
 
   has_many :members
 
-  def found
-    save
-    self
+  def self.found_by(founder, params = {})
+    founder.groups.create(params)
   end
 
   def submit_talk(talk)
