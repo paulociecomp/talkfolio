@@ -1,11 +1,11 @@
+<header>
+  <h1><%= t(:my_groups) %></h1>
+</header>
+
 <nav>
   <ul>
     <li><%= link_to t(:found_a_group), new_group_path %></li>
   </ul>
 </nav>
-
-<header>
-  <h1><%= t(:my_groups) %></h1>
-</header>
 
 <%= render "groups", :groups => @groups %>

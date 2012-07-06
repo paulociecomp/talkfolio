@@ -1,7 +1,11 @@
 <section class="groups">
-  <% groups.each do |group| %>
+  <% groups.each_with_index do |group,index| %>
     <article class="group">
       <%= link_to group.name, group_path(group) %>
+      
+      <% if index + 1 < groups.count %>
+        <span>|</span>
+      <% end %>
     </article>
   <%end%>
 </section>

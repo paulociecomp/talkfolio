@@ -3,9 +3,10 @@ Talkfolio::Application.routes.draw do
   devise_for :users
 
   controller :talks do
-    get "my_talks",     :action => :my_talks,     :as => :my_talks
-    get "talks/new",    :action => :new,          :as => :new_talk
-    post "talks",       :action => :create,       :as => :talks
+    get "my_talks",           :action => :my_talks,     :as => :my_talks
+    get "talker/:talker_id",  :action => :talker,       :as => :talker
+    get "talks/new",          :action => :new,          :as => :new_talk
+    post "talks",             :action => :create,       :as => :talks
   end
 
   controller :groups do

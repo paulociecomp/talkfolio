@@ -15,8 +15,8 @@
 [OK]  Group admin confirms a group member
 [OK]  Group founder is first member of group as a founder role
 [OK]  User lists groups where talk is submited
-
-Shows talker in talk list if it's not in talker's portfolio
+[OK]  Shows talker in talk list if it's not in talker's portfolio
+[OK]  User vies other talk profile
 
 # TALK SUBMITIONS
 Group admin rejects a talk from a talk submitter

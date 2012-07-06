@@ -1,0 +1,22 @@
+<header>
+  <h1>
+    <%= link_to @talker.name, talker_path(@talker) %> 
+    <small><%= t(:talker) %></small>
+  </h1>
+</header>
+
+<section>
+  <header>
+    <h1><%= t(:Portfolio) %></h1>
+  </header>
+
+  <%= render "talks", :talks => @talker.talks, :show_talker => false %>
+</section>
+
+<section>
+  <header>
+    <h1><%= t(:groups) %></h1>
+  </header>
+
+  <%= render "groups/groups", :groups => @talker.groups %>
+</section>

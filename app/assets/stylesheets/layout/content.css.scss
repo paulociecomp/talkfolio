@@ -27,8 +27,8 @@ section#content {
     }
   }
 
-  header h1, 
-  article h1 {
+  & > header h1, 
+  & > article h1 {
     &, a {
       color: #333;
       font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
@@ -42,32 +42,41 @@ section#content {
     }
   }
 
+  section header h1 {
+      color: #666;
+      font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif;
+      font-size: 1.5em;
+      margin-bottom: 7px;
+  }
+
+  section article h1 {
+      color: #333;
+      font-family: "Helvetica Nueve", Helvetica, Arial, sans-serif; 
+      font-size: 1.2em;
+      margin-top: 14px;
+  }
+
   article h1 a {
     color: #333;
   }
 
-  section.groups {
-    article.group {
+  section.groups,
+  section.talks {
+    article {
       h1 { margin-bottom: 0px; }
       p { margin-top: 7px; }
     }
   }
 
-  aside section.groups {
-    a {
+  aside section.groups,
+  aside article.talker {
+    a, span {
       color: #666;
       font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
     }
 
     article.group {
       display: inline-block;
-    }
-  }
-
-  section.talks {
-    article.talk {
-      h1 { margin-bottom: 0px; }
-      p { margin-top: 7px; }
     }
   }
 }

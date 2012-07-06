@@ -17,9 +17,5 @@
   <%= @group.description%>
 </p>
 
-<header>
-  <h1><%= t(:portfolio) %></h1>
-</header>
-
-<%= render "talks/talks", :talks => @portfolio %>
+<%= render "talks/talks", :talks => @portfolio, :show_talker => true %>
 

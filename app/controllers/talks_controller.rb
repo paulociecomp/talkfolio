@@ -1,8 +1,12 @@
 class TalksController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :except => :talker
 
   def my_talks
     @talks = current_user.talks
+  end
+
+  def talker
+    @talker = User.find(params[:talker_id])
   end
 
   def new
